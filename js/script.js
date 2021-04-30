@@ -1,5 +1,3 @@
-console.log ("GitHub test");
-
 let formElement = document.querySelector(".js-form");
 let amountElement = document.querySelector(".js-amount");
 let currencyElement = document.querySelector(".js-currency");
