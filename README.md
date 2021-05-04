@@ -1,4 +1,4 @@
-# currency-calculator
+# Currency calculator
 ## **YouCode** homework - module 4
 
 [Demo]
