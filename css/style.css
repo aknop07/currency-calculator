@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: inherit;
+}
+
+html {
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    background-color: #eee;
+    background-size: 100% 50%;
+}
+
+.body {
+    margin: auto;
+}

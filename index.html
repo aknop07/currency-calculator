@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrzej Knop">
+    <meta name="description" content="Internetowy kalkulator walut - praca domowa">
+    <meta name="keywords" content="internetowy, kalkulator, walut, andrzej, knop, praca, domowa, youcode, kurs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>Currency calculator - Andrzej Knop</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <img src="https://i.ibb.co/nwJGXMZ/country-currencies.png" alt="logo" height="100">
+        <h1 class="header__title">Currency calculator</h1>
+        <p class="header__description">live mid-market rates</p>
+    </header>
+    <main class="main">
+        <form class="form js-form">
+            <label class="form__label" for="amount">Amount (PLN)</label><br>
+            <input class="form__input js-amount" id="amount" type="number" name="amount" min="0" max="999999" step="0.01" required>
+
+            <label class="form__label" for="currency_input">Change to:</label><br>
+            <select class="form__input js-currency" id="currency_input" name="currency_input">
+                <option value="EUR">EUR - Euro</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="GBP">GBP - British Pound</option>
+            </select>
+
+
+            <p class="form__description"><img class="form__icon" src="https://i.ibb.co/VjbfBQV/images.png" alt="coin icon" height="20">We use midmarket rates</p>
+
+            <button class="form__button" type="submit">Convert</button>
+
+            <p class="form__description">You'll get: <span class="form__description form__description--bigger js-result">💰</span></p>
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyrights">© 2021 Andrzej Knop All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
